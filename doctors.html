@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Doctor guide — Run your online practice with Mashora</title>
+<meta name="description" content="A step-by-step guide for doctors: get verified, connect payouts, publish weekly availability, run video consultations, write medical reports and get paid after every session." />
+<meta name="theme-color" content="#0f766e" />
+<meta property="og:title" content="Mashora doctor guide" />
+<meta property="og:description" content="From verification to your first payout — everything you need to run consultations on Mashora." />
+<meta property="og:type" content="article" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='52' fill='%23F0FDFA' stroke='%230F766E' stroke-width='5'/%3E%3Cpath d='M26 60h22l10-26 13 54 10-28h23' fill='none' stroke='%230F766E' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+<script>
+  document.documentElement.classList.add("js");
+  try { var t = localStorage.getItem("mashora-theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============================== NAV ============================== -->
+<header class="nav" data-nav>
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" aria-label="Mashora home"><svg class="logo" aria-hidden="true"><use href="#i-logo"/></svg>Mashora</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#safety">Safety</a>
+      <a href="patients.html">For patients</a>
+      <a href="doctors.html" aria-current="page">For doctors</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode"><svg class="ic ic-moon" aria-hidden="true"><use href="#i-moon"/></svg><svg class="ic ic-sun" aria-hidden="true"><use href="#i-sun"/></svg></button>
+      <a class="btn btn-primary btn-sm" href="index.html#download">Get the app</a>
+      <button class="icon-btn nav-burger" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" hidden>
+  <a href="index.html#features">Features <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  <a href="index.html#safety">Safety <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  <a href="patients.html">For patients <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  <a href="doctors.html">For doctors <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  <a href="index.html#faq">FAQ <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  <a class="btn btn-primary btn-lg" href="index.html#download">Get the app</a>
+</div>
+
+<main id="main">
+
+<!-- ============================== PAGE HERO ============================== -->
+<section class="page-hero">
+  <div class="mesh" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="container rel">
+    <span class="eyebrow reveal"><span class="dot"></span>Doctor guide</span>
+    <h1 class="reveal" style="--d:.06s">Run your online practice <span class="gradient-text">with Mashora</span></h1>
+    <p class="lead reveal" style="--d:.12s">From verification to your first payout — everything you need to set up your profile, publish your hours and run consultations.</p>
+    <div class="hero-ctas reveal" style="--d:.18s">
+      <a class="btn btn-primary btn-lg" href="index.html#download"><svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>Get the app</a>
+      <a class="btn btn-outline btn-lg" href="#" data-link="dashboard" data-soon="Coming soon"><svg class="ic" aria-hidden="true"><use href="#i-monitor"/></svg>Open the dashboard</a>
+    </div>
+    <div class="jump-chips reveal" style="--d:.24s">
+      <a href="#verify"><svg class="ic" aria-hidden="true"><use href="#i-verified"/></svg>Get verified</a>
+      <a href="#payouts"><svg class="ic" aria-hidden="true"><use href="#i-bank"/></svg>Payouts</a>
+      <a href="#availability"><svg class="ic" aria-hidden="true"><use href="#i-repeat"/></svg>Availability</a>
+      <a href="#consult"><svg class="ic" aria-hidden="true"><use href="#i-video"/></svg>Consultations</a>
+      <a href="#report"><svg class="ic" aria-hidden="true"><use href="#i-file"/></svg>Reports</a>
+      <a href="#earnings"><svg class="ic" aria-hidden="true"><use href="#i-wallet"/></svg>Earnings</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== GUIDE ============================== -->
+<div class="container guide">
+  <aside class="toc" aria-label="On this page">
+    <h4>On this page</h4>
+    <ol>
+      <li><a href="#where">Where you'll work</a></li>
+      <li><a href="#signup">Create your account</a></li>
+      <li><a href="#verify">Get verified</a></li>
+      <li><a href="#profile">Complete your profile</a></li>
+      <li><a href="#payouts">Connect payouts</a></li>
+      <li><a href="#availability">Publish availability</a></li>
+      <li><a href="#bookings">Manage bookings</a></li>
+      <li><a href="#consult">Run the consultation</a></li>
+      <li><a href="#report">Write the report</a></li>
+      <li><a href="#earnings">How you get paid</a></li>
+      <li><a href="#reputation">Your reputation</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+    <div class="toc-card">
+      <b>Questions about your account?</b>
+      Message our team from <strong>Support</strong> in the dashboard or <strong>Profile → Contact support</strong> in the app.
+      <a class="btn btn-outline btn-sm" href="#" data-link="dashboard" data-soon="Soon">Open the dashboard</a>
+    </div>
+  </aside>
+
+  <div class="steps">
+
+    <!-- WHERE -->
+    <article class="step reveal" id="where">
+      <div class="step-head">
+        <span class="step-num g4"><svg class="ic ic-lg" aria-hidden="true"><use href="#i-sparkles"/></svg></span>
+        <div><span class="eyebrow-plain">Before you start</span><h2>Where you'll work</h2></div>
+      </div>
+      <p class="lead">Mashora gives you two tools that share the same account. Sign in to both with the same email and password.</p>
+      <div class="two-places">
+        <div class="place">
+          <span class="ico g1"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></span>
+          <h3>The Mashora app</h3>
+          <p>Your practice in your pocket — this is where consultations happen.</p>
+          <ul class="check-list">
+            <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Video consultations</b> with your patients</span></li>
+            <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span>Availability, days off and your time zone</span></li>
+            <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span>Bookings and patient chat</span></li>
+            <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span>Verification documents and profile photo</span></li>
+            <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Payout setup</b> with Stripe</span></li>
+          </ul>
+        </div>
+        <div class="place">
+          <span class="ico g2"><svg class="ic" aria-hidden="true"><use href="#i-monitor"/></svg></span>
+          <h3>The web dashboard</h3>
+          <p>Comfortable on a bigger screen — this is where you write reports.</p>
+          <ul class="check-list">
+            <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span>Bookings with the patient's notes and files</span></li>
+            <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Medical reports</b>, generated as PDF</span></li>
+            <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span>Weekly patterns, one-off slots and days off</span></li>
+            <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span>Consultation fee and time zone</span></li>
+            <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span>Patient chat and support</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout callout-info"><svg class="ic" aria-hidden="true"><use href="#i-info"/></svg><div>Video calls take place in the Mashora app, so keep it installed on the phone you'll consult from.</div></div>
+    </article>
+
+    <!-- 01 -->
+    <article class="step reveal" id="signup">
+      <div class="step-head">
+        <span class="step-num g1">01</span>
+        <div><span class="eyebrow-plain">Step 1</span><h2>Create your doctor account</h2></div>
+      </div>
+      <p class="lead">Sign up from the Mashora app — it takes about two minutes.</p>
+      <div class="step-body has-visual">
+        <ol class="numbered">
+          <li>Open the app, tap <b>Create account</b> and choose <b>Doctor</b>.</li>
+          <li>Enter your name, email, password, country and phone number.</li>
+          <li>Add your <b>doctor details</b>: specialty (from the list), a short bio and your consultation fee.</li>
+          <li>Confirm the <b>5-digit code</b> we send to your WhatsApp.</li>
+        </ol>
+        <div class="visual-card" aria-hidden="true">
+          <div class="ui-form">
+            <div class="ui-seg"><span>Patient</span><span class="on">Doctor</span></div>
+            <div class="ui-field"><b>Specialty</b><span>Cardiology</span></div>
+            <div class="ui-field"><b>Bio</b><span>Consultant cardiologist, 12 years…</span></div>
+            <div class="ui-field"><b>Consultation fee (USD)</b><span>$50</span></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 02 -->
+    <article class="step reveal" id="verify">
+      <div class="step-head">
+        <span class="step-num g2">02</span>
+        <div><span class="eyebrow-plain">Step 2</span><h2>Get verified</h2></div>
+      </div>
+      <p class="lead">Patients only see approved doctors. Getting approved takes one simple upload.</p>
+      <div class="step-body has-visual">
+        <ol class="numbered">
+          <li>In the app, open <span class="path">Profile <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg> Verification documents</span>.</li>
+          <li>Upload your <b>CV</b> and your <b>specialty certificate</b> — PDF, JPG or PNG, up to 10 MB each.</li>
+          <li>Connect your <b>payout account</b> (step 4) — it's required too. Our team reviews everything; your approval status is shown on your profile.</li>
+          <li>Once you're approved, you can publish availability and receive bookings.</li>
+        </ol>
+        <div class="visual-card" aria-hidden="true">
+          <div class="ui-status"><span class="dot-state green"></span><div><b>CV</b><span>cv-2026.pdf · uploaded</span></div></div>
+          <div class="ui-status"><span class="dot-state green"></span><div><b>Specialty certificate</b><span>certificate.pdf · uploaded</span></div></div>
+          <div class="ui-status"><span class="dot-state amber"></span><div><b>Approval status</b><span>Pending review</span></div></div>
+        </div>
+      </div>
+      <div class="callout callout-tip"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg><div><b>Updated your CV?</b> Upload the new version any time — our team is notified automatically. Once you're approved, patients can read your CV from your profile.</div></div>
+    </article>
+
+    <!-- 03 -->
+    <article class="step reveal" id="profile">
+      <div class="step-head">
+        <span class="step-num g5">03</span>
+        <div><span class="eyebrow-plain">Step 3</span><h2>Complete your profile</h2></div>
+      </div>
+      <p class="lead">A complete profile helps patients choose you with confidence.</p>
+      <ul class="check-list">
+        <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Profile photo</b> — tap your photo in the app's Profile to add one. Patients see it on your profile.</span></li>
+        <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Consultation fee</b> — anywhere from $1 to $1,000 per session. Change it from the app's Profile or the dashboard's Profile page; new prices apply to new bookings only.</span></li>
+        <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Time zone</b> — set it from the dashboard's Profile page (one click detects your computer's time zone) or from <span class="path">My availability <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg> Time zone</span> in the app.</span></li>
+      </ul>
+      <div class="callout callout-warn"><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg><div><b>Set your time zone before creating weekly patterns.</b> Your weekly hours are read in this time zone. If you change it later, Mashora automatically rebuilds your upcoming open slots and days off in the new zone — appointments that are already booked are never moved.</div></div>
+    </article>
+
+    <!-- 04 -->
+    <article class="step reveal" id="payouts">
+      <div class="step-head">
+        <span class="step-num g4">04</span>
+        <div><span class="eyebrow-plain">Step 4</span><h2>Connect your payout account</h2></div>
+      </div>
+      <p class="lead">Mashora pays you through Stripe Connect. You don't need an existing Stripe account — one is created for you during setup.</p>
+      <div class="step-body has-visual">
+        <ol class="numbered">
+          <li>In the app, open <span class="path">Profile <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg> Payments</span> — or the <b>Payouts</b> card on the dashboard's Profile page.</li>
+          <li>Tap <b>Connect bank account</b>.</li>
+          <li>Complete Stripe's secure form. Your banking details go directly to Stripe — never to Mashora.</li>
+          <li>Return to the app. Your status updates automatically.</li>
+        </ol>
+        <div class="visual-card" aria-hidden="true">
+          <div class="ui-status"><span class="dot-state gray"></span><div><b>Not connected yet</b><span>No payouts until you connect</span></div></div>
+          <div class="ui-status"><span class="dot-state amber"></span><div><b>Under review</b><span>Stripe is verifying your details</span></div></div>
+          <div class="ui-status"><span class="dot-state green"></span><div><b>Payments enabled</b><span>You're all set</span></div></div>
+        </div>
+      </div>
+      <div class="callout callout-warn"><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg><div><b>Required for approval.</b> Your account can't be approved until your payout account is active. Need to change banks later? Tap <b>Update payout details</b> in the app or on the dashboard — Stripe's page opens and you edit it there. Stripe isn't available in every country, so check that yours is supported before you start.</div></div>
+    </article>
+
+    <!-- 05 -->
+    <article class="step reveal" id="availability">
+      <div class="step-head">
+        <span class="step-num g1">05</span>
+        <div><span class="eyebrow-plain">Step 5</span><h2>Publish your availability</h2></div>
+      </div>
+      <p class="lead">Choose when patients can book you — from the app's <b>Availability</b> tab or the dashboard's <b>Availability</b> page. Mix and match all three.</p>
+      <div class="cards c3">
+        <div class="card"><span class="ico ico-sm g1"><svg class="ic" aria-hidden="true"><use href="#i-repeat"/></svg></span><h3>Weekly patterns</h3><p>Pick a day, start and end time, and a session length of 20, 30, 45 or 60 minutes. Slots are generated four weeks ahead and keep rolling. Pause or resume a pattern any time.</p></div>
+        <div class="card"><span class="ico ico-sm g2"><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg></span><h3>One-off slots</h3><p>Add a single slot on a specific date and time — perfect for extra hours outside your usual week.</p></div>
+        <div class="card"><span class="ico ico-sm g3"><svg class="ic" aria-hidden="true"><use href="#i-cal-x"/></svg></span><h3>Days off</h3><p>Block a whole day. Open slots on it are removed straight away, and your weekly patterns skip it. Booked appointments are never touched.</p></div>
+      </div>
+      <div class="callout callout-info"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg><div>Mashora automatically leaves a <b>15-minute gap</b> between consecutive sessions, so a consultation that runs over never collides with the next one. Patients always see your slots in their own time zone.</div></div>
+    </article>
+
+    <!-- 06 -->
+    <article class="step reveal" id="bookings">
+      <div class="step-head">
+        <span class="step-num g2">06</span>
+        <div><span class="eyebrow-plain">Step 6</span><h2>Manage your bookings</h2></div>
+      </div>
+      <p class="lead">Every confirmed booking reaches you instantly, with everything you need to prepare.</p>
+      <div class="step-body has-visual">
+        <ul class="check-list">
+          <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span>A <b>notification</b> for every new confirmed booking and every cancellation.</span></li>
+          <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span>Open a booking to read the patient's <b>note</b> and view any <b>files</b> they uploaded — lab results, scans or X-rays.</span></li>
+          <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Chat</b> with the patient in the booking — it stays open until 7 days after the appointment.</span></li>
+          <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span>A <b>reminder</b> 30 minutes before every appointment.</span></li>
+        </ul>
+        <div class="visual-card" aria-hidden="true">
+          <div class="dash-card" style="background:var(--surface);border-color:var(--border)">
+            <h5>Upcoming consultations</h5>
+            <div class="bk"><span class="av g3">SM</span><div><b>Sara M.</b><span>Today · 5:30 PM · 2 files</span></div><span class="pill pill-green">Confirmed</span></div>
+            <div class="bk"><span class="av g2">KR</span><div><b>Khaled R.</b><span>Tomorrow · 10:00 AM</span></div><span class="pill pill-green">Confirmed</span></div>
+            <div class="bk"><span class="av g4">MT</span><div><b>Maya T.</b><span>Thu · 11:15 AM</span></div><span class="pill pill-amber">Awaiting payment</span></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 07 -->
+    <article class="step reveal" id="consult">
+      <div class="step-head">
+        <span class="step-num g5">07</span>
+        <div><span class="eyebrow-plain">Step 7</span><h2>Run the consultation</h2></div>
+      </div>
+      <p class="lead">Consultations happen in a private video room inside the Mashora app.</p>
+      <div class="step-body has-visual">
+        <ol class="numbered">
+          <li>At the start time, open the booking in the app and tap <b>Join video call</b>. The button unlocks exactly on time.</li>
+          <li>Whoever joins first, the other is notified right away that the session has started.</li>
+          <li>When you're done, tap <b>End call</b>. The session closes for both of you and the patient is invited to rate the visit.</li>
+          <li>If nobody ends the call, the session completes on its own 15 minutes after its scheduled end.</li>
+        </ol>
+        <div class="visual-card" aria-hidden="true">
+          <div class="call" style="margin-top:0">
+            <div class="call-remote"><span class="ring"></span><span class="ring r2"></span><div class="av av-xl g3">SM</div></div>
+            <span class="call-live"><i></i>Live · 08:12</span>
+            <div class="call-self"><div class="av av-round g2">OS</div></div>
+            <span class="call-name">Sara M. · Patient</span>
+            <div class="call-bar">
+              <i><svg class="ic" aria-hidden="true"><use href="#i-mic"/></svg></i>
+              <i><svg class="ic" aria-hidden="true"><use href="#i-cam"/></svg></i>
+              <i class="end"><svg class="ic" aria-hidden="true"><use href="#i-phone-off"/></svg></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="callout callout-tip"><svg class="ic" aria-hidden="true"><use href="#i-bulb"/></svg><div>Connection dropped? Tap <b>Join</b> again — the room stays open until 15 minutes after the scheduled end.</div></div>
+    </article>
+
+    <!-- 08 -->
+    <article class="step reveal" id="report">
+      <div class="step-head">
+        <span class="step-num g3">08</span>
+        <div><span class="eyebrow-plain">Step 8</span><h2>Write the medical report</h2></div>
+      </div>
+      <p class="lead">Reports are written on the web dashboard, where there's room to type comfortably.</p>
+      <div class="step-body has-visual">
+        <ol class="numbered">
+          <li>In the dashboard, open <span class="path">Bookings <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg> the booking <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg> Report</span>.</li>
+          <li>Fill in the template: <b>diagnosis</b>, <b>medications</b> (name, dosage and duration), <b>follow-up notes</b> and an optional follow-up date.</li>
+          <li>Submit. A PDF is generated and sent to your patient automatically, and they're notified right away.</li>
+        </ol>
+        <div class="visual-card" aria-hidden="true">
+          <div class="ui-form">
+            <div class="ui-field"><b>Diagnosis</b><span>Seasonal allergic rhinitis</span></div>
+            <div class="ui-field"><b>Medication</b><span>Cetirizine · 10 mg · 14 days</span></div>
+            <div class="ui-field"><b>Follow-up</b><span>Review in 2 weeks if symptoms persist</span></div>
+          </div>
+          <span class="ui-btn">Generate PDF report</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- 09 -->
+    <article class="step reveal" id="earnings">
+      <div class="step-head">
+        <span class="step-num g1">09</span>
+        <div><span class="eyebrow-plain">Step 9</span><h2>How you get paid</h2></div>
+      </div>
+      <p class="lead">You set your fee, and you receive it in full for every completed session.</p>
+      <div class="step-body has-visual">
+        <ul class="check-list">
+          <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Paid after the session.</b> Your fee is transferred to your Stripe account when the session completes — not when the patient books.</span></li>
+          <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Late cancellations.</b> If a patient cancels less than 24 hours before, you receive 30% of what they paid, straight away.</span></li>
+          <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Need to cancel?</b> Contact our support team — the patient receives a full refund and there's no payout for that booking.</span></li>
+          <li><span class="tick"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>To your bank.</b> Stripe then pays your balance out to your bank account on your Stripe payout schedule.</span></li>
+        </ul>
+        <div class="visual-card" aria-hidden="true">
+          <div class="money">
+            <div class="money-row"><span>Your fee</span><b>$50</b></div>
+            <div class="money-op">+</div>
+            <div class="money-row"><span>Platform fee (example)</span><b>$5</b></div>
+            <div class="money-op">=</div>
+            <div class="money-row"><span>The patient pays</span><b>$55</b></div>
+            <div class="money-row hi"><span>You receive</span><b>$50</b></div>
+          </div>
+        </div>
+      </div>
+      <div class="callout callout-info"><svg class="ic" aria-hidden="true"><use href="#i-info"/></svg><div>The figures above are an example. The platform fee is a fixed amount set by Mashora and is already included in the session price patients see — it never comes out of your fee.</div></div>
+    </article>
+
+    <!-- 10 -->
+    <article class="step reveal" id="reputation">
+      <div class="step-head">
+        <span class="step-num g2">10</span>
+        <div><span class="eyebrow-plain">Step 10</span><h2>Build your reputation</h2></div>
+      </div>
+      <p class="lead">After each completed consultation, patients can rate you from 1 to 5 stars and leave a comment. Your average rating and review count appear on your profile, and patients can sort doctors by rating.</p>
+      <div class="cards c3">
+        <div class="card"><span class="ico ico-sm g5"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg></span><h3>Be on time</h3><p>Join right at the start time — if you're first in, your patient is notified you're waiting.</p></div>
+        <div class="card"><span class="ico ico-sm g3"><svg class="ic" aria-hidden="true"><use href="#i-file"/></svg></span><h3>Send reports promptly</h3><p>A clear report soon after the visit is what patients value most.</p></div>
+        <div class="card"><span class="ico ico-sm g4"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg></span><h3>Follow up in chat</h3><p>Answer follow-up questions during the 7 days the chat stays open.</p></div>
+      </div>
+    </article>
+
+    <!-- FAQ -->
+    <section id="faq" class="reveal" style="scroll-margin-top:calc(var(--nav-h) + 20px)">
+      <div class="section-head left" style="margin-bottom:24px">
+        <span class="eyebrow-plain">FAQ</span>
+        <h2 style="font-size:clamp(26px,3vw,34px)">Doctor questions</h2>
+      </div>
+      <div class="faq" style="margin-inline:0">
+        <details>
+          <summary>Can I accept bookings before I'm approved?<span class="chev"><svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+          <div class="answer"><p>No. Your profile becomes visible to patients, and you can publish availability, once our team has approved your CV and specialty certificate.</p></div>
+        </details>
+        <details>
+          <summary>Can I change my fee?<span class="chev"><svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+          <div class="answer"><p>Yes, any time, from the app or the dashboard. The new fee applies to new bookings — existing bookings keep the price they were made at.</p></div>
+        </details>
+        <details>
+          <summary>What happens if a patient doesn't join?<span class="chev"><svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+          <div class="answer"><p>The session closes automatically 15 minutes after its scheduled end and is treated as completed — including your payout.</p></div>
+        </details>
+        <details>
+          <summary>What if I need to cancel an appointment?<span class="chev"><svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+          <div class="answer"><p>Contact our support team from the dashboard or the app. We'll cancel the booking and fully refund your patient, who is notified automatically.</p></div>
+        </details>
+        <details>
+          <summary>Can I hold video calls from the dashboard?<span class="chev"><svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+          <div class="answer"><p>Video calls take place in the Mashora app. The dashboard is for bookings, reports, availability and your profile settings.</p></div>
+        </details>
+        <details>
+          <summary>My patients are in other countries. Which time do they see?<span class="chev"><svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+          <div class="answer"><p>Their own. You set your hours in your time zone, and every patient sees your slots converted to the local time of their phone.</p></div>
+        </details>
+        <details>
+          <summary>Do I need my own Stripe account?<span class="chev"><svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+          <div class="answer"><p>No. When you tap “Connect bank account”, Stripe creates your payout account for you as part of the setup form.</p></div>
+        </details>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<!-- ============================== CTA ============================== -->
+<section class="section">
+  <div class="container">
+    <div class="cta reveal">
+      <div class="mesh" aria-hidden="true"><span class="b1"></span><span class="b2"></span></div>
+      <div class="grid-bg" aria-hidden="true"></div>
+      <h2>Open your online practice today</h2>
+      <p>Download the Mashora app, create your doctor account and upload your documents — we'll take it from there.</p>
+      <div class="stores">
+        <a class="store-btn" href="#" data-link="appStore" data-soon="Coming soon"><svg class="ic ic-fill" aria-hidden="true"><use href="#i-apple"/></svg><span><small>Download on the</small><strong>App Store</strong></span></a>
+        <a class="store-btn" href="#" data-link="googlePlay" data-soon="Coming soon"><svg class="ic ic-fill" aria-hidden="true"><use href="#i-play"/></svg><span><small>Get it on</small><strong>Google Play</strong></span></a>
+      </div>
+      <p class="sub-cta">Looking for care instead? <a href="patients.html">Read the patient guide</a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><svg class="logo" aria-hidden="true"><use href="#i-logo"/></svg>Mashora</a>
+        <p class="footer-about">Online consultations with verified doctors — private video, secure payments and medical reports in one app.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#how-it-works">How it works</a></li>
+          <li><a href="index.html#safety">Trust &amp; safety</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="patients.html">For patients</a></li>
+          <li><a href="doctors.html">For doctors</a></li>
+          <li><a href="#" data-link="dashboard" data-hide-empty>Doctor dashboard</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#" data-link="supportEmail" data-hide-empty>Contact support</a></li>
+          <li><a href="#" data-link="privacy" data-hide-empty>Privacy policy</a></li>
+          <li><a href="#" data-link="terms" data-hide-empty>Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year></span> Mashora. All rights reserved.</p>
+      <p class="disclaimer"><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg>Mashora is not for emergencies. In a medical emergency, call your local emergency number.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

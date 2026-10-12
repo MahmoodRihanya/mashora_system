@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mashora — See a trusted doctor, without the waiting room</title>
+<meta name="description" content="Mashora connects patients with verified doctors for private video consultations. Book in minutes, pay securely, and keep every medical report as a PDF." />
+<meta name="theme-color" content="#0f766e" />
+<meta property="og:title" content="Mashora — Online consultations with verified doctors" />
+<meta property="og:description" content="Book a verified doctor, meet over private video, and get your medical report as a PDF — all in one app." />
+<meta property="og:type" content="website" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='52' fill='%23F0FDFA' stroke='%230F766E' stroke-width='5'/%3E%3Cpath d='M26 60h22l10-26 13 54 10-28h23' fill='none' stroke='%230F766E' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+<script>
+  document.documentElement.classList.add("js");
+  try { var t = localStorage.getItem("mashora-theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============================== NAV ============================== -->
+<header class="nav" data-nav>
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" aria-label="Mashora home"><svg class="logo" aria-hidden="true"><use href="#i-logo"/></svg>Mashora</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#safety">Safety</a>
+      <a href="patients.html">For patients</a>
+      <a href="doctors.html">For doctors</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode"><svg class="ic ic-moon" aria-hidden="true"><use href="#i-moon"/></svg><svg class="ic ic-sun" aria-hidden="true"><use href="#i-sun"/></svg></button>
+      <a class="btn btn-primary btn-sm" href="#download">Get the app</a>
+      <button class="icon-btn nav-burger" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobile-menu" hidden>
+  <a href="index.html#features">Features <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  <a href="index.html#safety">Safety <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  <a href="patients.html">For patients <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  <a href="doctors.html">For doctors <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  <a href="index.html#faq">FAQ <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  <a class="btn btn-primary btn-lg" href="#download">Get the app</a>
+</div>
+
+<main id="main">
+
+<!-- ============================== HERO ============================== -->
+<section class="hero">
+  <div class="mesh" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <div class="container rel hero-grid">
+    <div>
+      <span class="eyebrow reveal"><span class="dot"></span>Online consultations with verified doctors</span>
+      <h1 class="reveal" style="--d:.06s">See a trusted doctor, <span class="gradient-text">without the waiting room.</span></h1>
+      <p class="hero-lead reveal" style="--d:.12s">
+        Mashora connects you with verified doctors for private video consultations.
+        Book in minutes, pay securely, and keep every medical report in your pocket.
+      </p>
+      <div class="hero-ctas reveal" style="--d:.18s">
+        <a class="btn btn-primary btn-lg" href="#download"><svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>Get the app</a>
+        <a class="btn btn-outline btn-lg" href="doctors.html"><svg class="ic" aria-hidden="true"><use href="#i-steth"/></svg>I'm a doctor</a>
+      </div>
+      <div class="hero-proof reveal" style="--d:.24s">
+        <span><svg class="ic" aria-hidden="true"><use href="#i-verified"/></svg>Every doctor verified</span>
+        <span><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg>Payments by Stripe</span>
+        <span><svg class="ic" aria-hidden="true"><use href="#i-file"/></svg>Reports as PDF</span>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal" style="--d:.2s">
+      <div class="phone" role="img" aria-label="The Mashora app showing doctors available today">
+        <div class="phone-screen">
+          <div class="app-head">
+            <div class="status-bar"><span>9:41</span><span class="sb-icons"><i></i><i></i></span></div>
+            <div class="greet">Good evening, Sara</div>
+            <div class="title">Find your doctor</div>
+            <div class="app-search"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg>Search doctors or specialties</div>
+          </div>
+          <div class="app-chips">
+            <span class="app-chip on">All</span><span class="app-chip">Cardiology</span><span class="app-chip">Dermatology</span><span class="app-chip">Pediatrics</span>
+          </div>
+          <div class="app-body">
+            <div class="app-section-title">Available today <small>See all</small></div>
+            <div class="doc-card">
+              <div class="av g1">LH</div>
+              <div class="meta"><b>Dr. Lina Haddad</b><span>Dermatology</span><span class="rate">★ 4.9 <em>· Today 5:30 PM</em></span></div>
+              <div class="price">$45<small>/session</small></div>
+            </div>
+            <div class="doc-card">
+              <div class="av g2">OS</div>
+              <div class="meta"><b>Dr. Omar Saleh</b><span>Cardiology</span><span class="rate">★ 4.8 <em>· Today 7:00 PM</em></span></div>
+              <div class="price">$60<small>/session</small></div>
+            </div>
+            <div class="doc-card">
+              <div class="av g4">NK</div>
+              <div class="meta"><b>Dr. Nour Khalil</b><span>Pediatrics</span><span class="rate">★ 5.0 <em>· Tomorrow 10:00 AM</em></span></div>
+              <div class="price">$40<small>/session</small></div>
+            </div>
+            <div class="next-slot"><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg><span>Times shown in <b>your local time</b></span></div>
+          </div>
+          <div class="app-tabbar">
+            <span class="on"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg>Find care</span>
+            <span><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg>Bookings</span>
+            <span><svg class="ic" aria-hidden="true"><use href="#i-file"/></svg>Records</span>
+            <span><svg class="ic" aria-hidden="true"><use href="#i-user"/></svg>Profile</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="float-card f1"><span class="fc-ic g5"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span><div><b>Booking confirmed</b><span>Today · 5:30 PM · Video call</span></div></div>
+      <div class="float-card f2"><span class="fc-ic g2"><svg class="ic" aria-hidden="true"><use href="#i-bell"/></svg></span><div><b>Starts in 30 minutes</b><span>Tap to join your consultation</span></div></div>
+      <div class="float-card f3"><span class="fc-ic g3"><svg class="ic" aria-hidden="true"><use href="#i-file"/></svg></span><div><b>Medical report ready</b><span>PDF · Dr. Lina Haddad</span></div></div>
+      <div class="float-card f4"><span class="fc-ic g4"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg></span><div><b class="stars">★★★★★</b><span>Thanks for rating your visit</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FACTS ============================== -->
+<section class="section" style="padding-top:0" aria-label="Mashora at a glance">
+  <div class="container">
+    <div class="facts reveal">
+      <div class="fact"><strong class="gradient-text">100%</strong><span>refund when you cancel 24+ hours before your visit</span></div>
+      <div class="fact"><strong class="gradient-text">30 min</strong><span>reminder before every video call — for you and your doctor</span></div>
+      <div class="fact"><strong class="gradient-text">15 min</strong><span>grace period to rejoin if your connection drops</span></div>
+      <div class="fact"><strong class="gradient-text">7 days</strong><span>of follow-up chat with your doctor after the visit</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== HOW IT WORKS ============================== -->
+<section class="section" id="how-it-works" style="padding-top:0">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow-plain">How it works</span>
+      <h2>One visit, end to end — <span class="gradient-text">in one app</span></h2>
+      <p>From the first search to your follow-up questions, every step of the consultation happens inside Mashora.</p>
+    </div>
+    <div class="journey">
+      <div class="j-step reveal">
+        <div class="j-num"><span class="ico ico-sm g1"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg></span><b>01</b></div>
+        <h3>Find your doctor</h3>
+        <p>Search by name or specialty, filter by price and rating, and read reviews from real patients.</p>
+      </div>
+      <div class="j-step reveal" style="--d:.06s">
+        <div class="j-num"><span class="ico ico-sm g2"><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg></span><b>02</b></div>
+        <h3>Book &amp; pay</h3>
+        <p>Pick an open time — shown in your own time zone — and pay by card. Your slot is held while you check out.</p>
+      </div>
+      <div class="j-step reveal" style="--d:.12s">
+        <div class="j-num"><span class="ico ico-sm g5"><svg class="ic" aria-hidden="true"><use href="#i-clip"/></svg></span><b>03</b></div>
+        <h3>Prepare</h3>
+        <p>Upload lab results or X-rays and message your doctor before the call.</p>
+      </div>
+      <div class="j-step reveal" style="--d:.18s">
+        <div class="j-num"><span class="ico ico-sm g4"><svg class="ic" aria-hidden="true"><use href="#i-video"/></svg></span><b>04</b></div>
+        <h3>Consult</h3>
+        <p>Join a private video call in the app the moment your appointment starts.</p>
+      </div>
+      <div class="j-step reveal" style="--d:.24s">
+        <div class="j-num"><span class="ico ico-sm g3"><svg class="ic" aria-hidden="true"><use href="#i-file"/></svg></span><b>05</b></div>
+        <h3>Follow up</h3>
+        <p>Receive your report as a PDF, keep chatting for 7 days, and rate your visit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FEATURES ============================== -->
+<section class="section section-soft" id="features">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow-plain">Features</span>
+      <h2>Everything a great consultation needs</h2>
+      <p>Thoughtful details at every step — so you can focus on your health, not on the logistics.</p>
+    </div>
+
+    <div class="bento">
+      <article class="tile tile-hero reveal">
+        <span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-video"/></svg></span>
+        <h3>Private video consultations, built right in</h3>
+        <p>No links to share and no extra apps. Every appointment gets its own private room, and the join button unlocks right on time.</p>
+        <div class="call" role="img" aria-label="A live video consultation in the Mashora app">
+          <div class="call-remote">
+            <span class="ring"></span><span class="ring r2"></span>
+            <div class="av av-xl g2">OS</div>
+          </div>
+          <span class="call-live"><i></i>Live · 12:48</span>
+          <div class="call-self"><div class="av av-round g3">SM</div></div>
+          <span class="call-name">Dr. Omar Saleh · Cardiology</span>
+          <div class="call-bar">
+            <i><svg class="ic" aria-hidden="true"><use href="#i-mic"/></svg></i>
+            <i><svg class="ic" aria-hidden="true"><use href="#i-cam"/></svg></i>
+            <i class="end"><svg class="ic" aria-hidden="true"><use href="#i-phone-off"/></svg></i>
+          </div>
+        </div>
+        <div class="tile-foot">
+          <span class="tag">Opens at your start time</span>
+          <span class="tag">Rejoin if you drop</span>
+          <span class="tag">No extra apps</span>
+        </div>
+      </article>
+
+      <article class="tile reveal" style="--d:.05s">
+        <span class="ico g2"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg></span>
+        <h3>Find the right doctor</h3>
+        <p>Search by name, filter by specialty, price and rating, and sort by the soonest opening.</p>
+        <div class="mini-filters"><span class="on">Cardiology</span><span>Under $50</span><span>4.5★ +</span><span>Soonest</span></div>
+      </article>
+
+      <article class="tile reveal" style="--d:.1s">
+        <span class="ico g5"><svg class="ic" aria-hidden="true"><use href="#i-card"/></svg></span>
+        <h3>Clear prices, secure checkout</h3>
+        <p>The price on a doctor's profile is the full price. Checkout runs on Stripe — Mashora never sees your card.</p>
+        <div class="mini-receipt">
+          <div><span>Dr. Lina Haddad · 30 min</span><span>$45.00</span></div>
+          <div class="total"><span>Total paid</span><span>$45.00</span></div>
+        </div>
+      </article>
+
+      <article class="tile reveal" style="--d:.05s">
+        <span class="ico g3"><svg class="ic" aria-hidden="true"><use href="#i-file"/></svg></span>
+        <h3>Your report, as a PDF</h3>
+        <p>Your doctor records the diagnosis, medications and follow-up plan — saved in your medical records.</p>
+        <div class="mini-pdf"><span class="doc">PDF</span><div><b>Medical report</b><span>Diagnosis · Medications · Follow-up</span></div></div>
+      </article>
+
+      <article class="tile reveal" style="--d:.1s">
+        <span class="ico g1"><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg></span>
+        <h3>Always in your time zone</h3>
+        <p>Doctors and patients can be in different countries — everyone sees the appointment in their own local time.</p>
+        <div class="tz-row">
+          <div class="tz"><span>Doctor · Berlin</span><b>4:30 PM</b></div>
+          <div class="tz-line">same appointment</div>
+          <div class="tz"><span>You · Damascus</span><b>5:30 PM</b></div>
+        </div>
+      </article>
+
+      <article class="tile tile-wide reveal">
+        <div class="tile-split">
+          <div>
+            <span class="ico g4"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg></span>
+            <h3>Talk to your doctor before and after</h3>
+            <p>Every booking has its own chat, open from confirmation until 7 days after your appointment. Share lab results and scans too — PDF, JPG or PNG up to 20 MB.</p>
+          </div>
+          <div class="mini-chat" aria-hidden="true">
+            <div class="bubble in">Hi Sara, could you upload your latest blood test before our call?</div>
+            <div class="bubble out">Done — I've attached the PDF.</div>
+            <div class="bubble in">Got it, thank you. See you at 5:30.</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tile reveal" style="--d:.05s">
+        <span class="ico g2"><svg class="ic" aria-hidden="true"><use href="#i-bell"/></svg></span>
+        <h3>Reminders that matter</h3>
+        <p>Instant updates when your booking is confirmed, 30 minutes before your call, and when your report is ready.</p>
+      </article>
+
+      <article class="tile reveal" style="--d:.1s">
+        <span class="ico g3"><svg class="ic" aria-hidden="true"><use href="#i-star"/></svg></span>
+        <h3>Honest reviews</h3>
+        <p>Only patients who completed a consultation can rate a doctor — one review per visit.</p>
+      </article>
+
+      <article class="tile reveal">
+        <span class="ico g3"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg></span>
+        <h3>Favorite doctors</h3>
+        <p>Save the doctors you trust and book them again in seconds.</p>
+      </article>
+
+      <article class="tile reveal" style="--d:.05s">
+        <span class="ico g4"><svg class="ic" aria-hidden="true"><use href="#i-moon"/></svg></span>
+        <h3>Light or dark</h3>
+        <p>Choose a light or dark look, or follow your phone's setting automatically.</p>
+      </article>
+
+      <article class="tile reveal" style="--d:.1s">
+        <span class="ico g5"><svg class="ic" aria-hidden="true"><use href="#i-support"/></svg></span>
+        <h3>Real human support</h3>
+        <p>Chat with the Mashora team from inside the app whenever you need help.</p>
+      </article>
+
+      <article class="tile reveal" style="--d:.15s">
+        <span class="ico g1"><svg class="ic" aria-hidden="true"><use href="#i-msg"/></svg></span>
+        <h3>Quick, verified sign-up</h3>
+        <p>Confirm your phone number with a one-time code sent over WhatsApp — and reset your password the same way.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FOR DOCTORS ============================== -->
+<section class="section dark-band" id="for-doctors">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="container rel split">
+    <div class="reveal">
+      <span class="eyebrow"><svg class="ic ic-sm" aria-hidden="true"><use href="#i-steth"/></svg>For doctors</span>
+      <h2 style="margin-top:18px;font-size:clamp(30px,4.2vw,46px);font-weight:800">Your practice, online — <span class="gradient-text">on your terms.</span></h2>
+      <p style="margin-top:16px;font-size:18px;color:rgba(213,245,240,.8)">Set your own fee and hours, consult from anywhere, and get paid automatically after every session.</p>
+      <ul class="feature-list">
+        <li><span class="ico ico-sm"><svg class="ic" aria-hidden="true"><use href="#i-repeat"/></svg></span><div><h4>A calendar that fills itself</h4><p>Set your weekly hours once — slots are generated four weeks ahead, with a 15-minute buffer between sessions.</p></div></li>
+        <li><span class="ico ico-sm"><svg class="ic" aria-hidden="true"><use href="#i-edit"/></svg></span><div><h4>Reports in minutes</h4><p>Fill in a simple template on the web dashboard — the PDF goes straight to your patient.</p></div></li>
+        <li><span class="ico ico-sm"><svg class="ic" aria-hidden="true"><use href="#i-wallet"/></svg></span><div><h4>Paid after every session</h4><p>Connect your bank account through Stripe and your full fee is transferred when each session ends.</p></div></li>
+        <li><span class="ico ico-sm"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg></span><div><h4>Protected from late cancellations</h4><p>If a patient cancels less than 24 hours before, you still receive 30% of the session price.</p></div></li>
+      </ul>
+      <div class="split-ctas">
+        <a class="btn btn-white btn-lg" href="doctors.html">Read the doctor guide <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-glass btn-lg" href="#" data-link="dashboard" data-soon="Coming soon"><svg class="ic" aria-hidden="true"><use href="#i-monitor"/></svg>Doctor dashboard</a>
+      </div>
+    </div>
+
+    <div class="reveal" style="--d:.12s">
+      <div class="laptop" role="img" aria-label="The Mashora doctor dashboard showing weekly availability and upcoming consultations">
+        <div class="laptop-screen">
+          <div class="dash">
+            <div class="dash-side">
+              <svg class="logo" aria-hidden="true"><use href="#i-logo"/></svg>
+              <i><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg></i>
+              <i class="on"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg></i>
+              <i><svg class="ic" aria-hidden="true"><use href="#i-user"/></svg></i>
+              <i><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg></i>
+            </div>
+            <div class="dash-main">
+              <div class="dash-title"><b>Availability</b><span>+ Add pattern</span></div>
+              <div class="dash-grid">
+                <div class="dash-card">
+                  <h5>Weekly patterns</h5>
+                  <div class="rule"><div><b>Sunday</b><br /><span>09:00 – 13:00 · 30 min</span></div><em>Active</em></div>
+                  <div class="rule"><div><b>Tuesday</b><br /><span>16:00 – 20:00 · 45 min</span></div><em>Active</em></div>
+                  <div class="rule"><div><b>Thursday</b><br /><span>10:00 – 14:00 · 30 min</span></div><em>Active</em></div>
+                </div>
+                <div class="dash-card">
+                  <h5>This week</h5>
+                  <div class="week">
+                    <div><small>S</small><i class="b"></i><i class="o"></i><i class="o"></i><i class="b"></i></div>
+                    <div><small>M</small><i></i><i></i><i></i><i></i></div>
+                    <div><small>T</small><i class="o"></i><i class="b"></i><i class="o"></i><i class="o"></i></div>
+                    <div><small>W</small><i></i><i></i><i></i><i></i></div>
+                    <div><small>T</small><i class="b"></i><i class="b"></i><i class="o"></i><i class="o"></i></div>
+                    <div><small>F</small><i></i><i></i><i></i><i></i></div>
+                    <div><small>S</small><i></i><i></i><i></i><i></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="dash-card">
+                <h5>Upcoming consultations</h5>
+                <div class="bk"><span class="av g3">SM</span><div><b>Sara M.</b><span>Today · 5:30 PM</span></div><span class="pill pill-green">Confirmed</span></div>
+                <div class="bk"><span class="av g2">KR</span><div><b>Khaled R.</b><span>Tomorrow · 10:00 AM</span></div><span class="pill pill-green">Confirmed</span></div>
+                <div class="bk"><span class="av g4">MT</span><div><b>Maya T.</b><span>Thu · 11:15 AM</span></div><span class="pill pill-amber">Awaiting payment</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="laptop-base"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FAIR BY DESIGN ============================== -->
+<section class="section" id="fair">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow-plain">Fair by design</span>
+      <h2>Clear rules for patients. <span class="gradient-text">Fair pay for doctors.</span></h2>
+      <p>No fine print — here is exactly what happens to every payment on Mashora.</p>
+    </div>
+
+    <div class="fair-grid">
+      <div class="panel reveal">
+        <span class="ico g1"><svg class="ic" aria-hidden="true"><use href="#i-cal-x"/></svg></span>
+        <h3>Cancellation, made clear</h3>
+        <p>Plans change. You can cancel from the app at any time before your visit.</p>
+        <div class="policy">
+          <div class="policy-row">
+            <div class="when"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Before you pay</div>
+            <div class="what">Cancel anytime — nothing has been charged.</div>
+            <div class="bar-wrap"><div class="bar"><span class="s-none" style="width:100%"></span></div></div>
+          </div>
+          <div class="policy-row">
+            <div class="when"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>24+ hours before</div>
+            <div class="what">Full refund to your card.</div>
+            <div class="bar-wrap"><div class="bar"><span class="s-patient" style="width:100%"></span></div></div>
+          </div>
+          <div class="policy-row">
+            <div class="when"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Under 24 hours</div>
+            <div class="what">50% back to you, 30% to your doctor for the reserved time, 20% to Mashora.</div>
+            <div class="bar-wrap"><div class="bar"><span class="s-patient" style="width:50%"></span><span class="s-doctor" style="width:30%"></span><span class="s-platform" style="width:20%"></span></div></div>
+          </div>
+          <div class="policy-row">
+            <div class="when"><svg class="ic" aria-hidden="true"><use href="#i-steth"/></svg>Doctor can't make it</div>
+            <div class="what">The doctor contacts our support team and you get a full refund.</div>
+            <div class="bar-wrap"><div class="bar"><span class="s-patient" style="width:100%"></span></div></div>
+          </div>
+        </div>
+        <div class="legend">
+          <span><i style="background:#14b8a6"></i>Refunded to you</span>
+          <span><i style="background:#6366f1"></i>To your doctor</span>
+          <span><i style="background:#f59e0b"></i>To Mashora</span>
+        </div>
+      </div>
+
+      <div class="panel reveal" style="--d:.1s">
+        <span class="ico g2"><svg class="ic" aria-hidden="true"><use href="#i-wallet"/></svg></span>
+        <h3>Doctors are paid after the visit</h3>
+        <p>Payments are held securely until the consultation actually takes place.</p>
+        <div class="flow">
+          <div class="flow-step"><span class="ico ico-sm g5"><svg class="ic" aria-hidden="true"><use href="#i-card"/></svg></span><div><b>You pay when you book</b><span>The full price is collected securely by Stripe.</span></div></div>
+          <div class="flow-arrow" aria-hidden="true"><svg class="ic"><use href="#i-arrow"/></svg></div>
+          <div class="flow-step"><span class="ico ico-sm g1"><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg></span><div><b>Held until the session</b><span>Nothing is paid out while your appointment is still upcoming.</span></div></div>
+          <div class="flow-arrow" aria-hidden="true"><svg class="ic"><use href="#i-arrow"/></svg></div>
+          <div class="flow-step"><span class="ico ico-sm g4"><svg class="ic" aria-hidden="true"><use href="#i-video"/></svg></span><div><b>The session completes</b><span>When the doctor ends the call — or automatically 15 minutes after the scheduled end.</span></div></div>
+          <div class="flow-arrow" aria-hidden="true"><svg class="ic"><use href="#i-arrow"/></svg></div>
+          <div class="flow-step"><span class="ico ico-sm g2"><svg class="ic" aria-hidden="true"><use href="#i-bank"/></svg></span><div><b>The doctor is paid</b><span>Their full fee is transferred to their connected Stripe account.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SAFETY ============================== -->
+<section class="section section-soft" id="safety">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow-plain">Trust &amp; safety</span>
+      <h2>Built to be trusted with your health</h2>
+      <p>Security isn't a feature we bolted on — it's how every part of Mashora works.</p>
+    </div>
+    <div class="cards c3">
+      <div class="card reveal"><span class="ico g1"><svg class="ic" aria-hidden="true"><use href="#i-verified"/></svg></span><h3>Verified doctors only</h3><p>Every doctor uploads a CV and a specialty certificate, reviewed by our team before they can accept bookings.</p></div>
+      <div class="card reveal" style="--d:.05s"><span class="ico g5"><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg></span><h3>Your card stays with Stripe</h3><p>Payments run on Stripe's secure checkout. Mashora never sees or stores your card number.</p></div>
+      <div class="card reveal" style="--d:.1s"><span class="ico g4"><svg class="ic" aria-hidden="true"><use href="#i-video"/></svg></span><h3>Private video rooms</h3><p>Each appointment has its own room, and every participant joins with a personal, time-limited access token.</p></div>
+      <div class="card reveal"><span class="ico g2"><svg class="ic" aria-hidden="true"><use href="#i-msg"/></svg></span><h3>Verified phone numbers</h3><p>New accounts confirm their phone number with a one-time code sent over WhatsApp.</p></div>
+      <div class="card reveal" style="--d:.05s"><span class="ico g3"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg></span><h3>Protected sign-in</h3><p>Repeated sign-in attempts are automatically limited to stop password guessing.</p></div>
+      <div class="card reveal" style="--d:.1s"><span class="ico g1"><svg class="ic" aria-hidden="true"><use href="#i-file"/></svg></span><h3>Private medical records</h3><p>Your reports never appear on doctor profiles or public pages — and you can download them anytime.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== GUIDES ============================== -->
+<section class="section" id="guides">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow-plain">Guides</span>
+      <h2>Step-by-step guides for everyone</h2>
+      <p>Whether you're booking your first consultation or opening your online practice, we'll walk you through it.</p>
+    </div>
+    <div class="guide-cards">
+      <a class="guide-card patient reveal" href="patients.html">
+        <span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-user"/></svg></span>
+        <h3>For patients</h3>
+        <p>Everything from creating your account to getting your medical report.</p>
+        <ul>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Find and book the right doctor</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Join your video consultation</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Cancellations and refunds explained</li>
+        </ul>
+        <span class="go">Read the patient guide <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </a>
+      <a class="guide-card doctor reveal" style="--d:.1s" href="doctors.html">
+        <span class="ico"><svg class="ic" aria-hidden="true"><use href="#i-steth"/></svg></span>
+        <h3>For doctors</h3>
+        <p>Set up your profile, publish your hours, run consultations and get paid.</p>
+        <ul>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Get verified and connect payouts</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Weekly availability and days off</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Medical reports and earnings</li>
+        </ul>
+        <span class="go">Read the doctor guide <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FAQ ============================== -->
+<section class="section section-soft" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow-plain">FAQ</span>
+      <h2>Questions, answered</h2>
+    </div>
+    <div class="faq">
+      <details class="reveal">
+        <summary>Is Mashora for medical emergencies?<span class="chev"><svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+        <div class="answer"><p>No. Mashora is for scheduled consultations. If you have a medical emergency, call your local emergency number or go to the nearest emergency department right away.</p></div>
+      </details>
+      <details class="reveal">
+        <summary>How much does a consultation cost?<span class="chev"><svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+        <div class="answer"><p>Each doctor sets their own fee. The price you see on the doctor's profile is the full price you pay, in US dollars — nothing is added at checkout.</p></div>
+      </details>
+      <details class="reveal">
+        <summary>What do I need for a video consultation?<span class="chev"><svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+        <div class="answer"><p>Just the Mashora app on your phone, a camera and microphone, and a stable internet connection. The call happens inside the app — there's nothing else to install.</p></div>
+      </details>
+      <details class="reveal">
+        <summary>What if my connection drops during the call?<span class="chev"><svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+        <div class="answer"><p>Simply tap “Join” again. The call stays open from your start time until 15 minutes after the scheduled end, so you can rejoin as many times as you need.</p></div>
+      </details>
+      <details class="reveal">
+        <summary>Can I cancel my appointment?<span class="chev"><svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+        <div class="answer"><p>Yes, from the booking in the app. Cancel 24 hours or more before your visit for a full refund. Within 24 hours you get 50% back — the rest compensates your doctor for the reserved time and covers the platform fee.</p></div>
+      </details>
+      <details class="reveal">
+        <summary>How are doctors verified?<span class="chev"><svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+        <div class="answer"><p>Every doctor uploads a CV and a specialty certificate. Our team reviews both before the doctor can publish availability or accept bookings. You can read a doctor's CV right from their profile.</p></div>
+      </details>
+      <details class="reveal">
+        <summary>My doctor is in another country. Which time will I see?<span class="chev"><svg class="ic" aria-hidden="true"><use href="#i-chev"/></svg></span></summary>
+        <div class="answer"><p>Always your own. Doctors set their time zone, and the app shows every appointment in the local time of the phone you're using — for you and for your doctor.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CTA ============================== -->
+<section class="section" id="download">
+  <div class="container">
+    <div class="cta reveal">
+      <div class="mesh" aria-hidden="true"><span class="b1"></span><span class="b2"></span></div>
+      <div class="grid-bg" aria-hidden="true"></div>
+      <h2>Your next appointment is a few taps away</h2>
+      <p>Download Mashora, create your account in a minute, and book your first consultation today.</p>
+      <div class="stores">
+        <a class="store-btn" href="#" data-link="appStore" data-soon="Coming soon"><svg class="ic ic-fill" aria-hidden="true"><use href="#i-apple"/></svg><span><small>Download on the</small><strong>App Store</strong></span></a>
+        <a class="store-btn" href="#" data-link="googlePlay" data-soon="Coming soon"><svg class="ic ic-fill" aria-hidden="true"><use href="#i-play"/></svg><span><small>Get it on</small><strong>Google Play</strong></span></a>
+      </div>
+      <p class="sub-cta">Are you a doctor? <a href="doctors.html">See how Mashora works for you</a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html"><svg class="logo" aria-hidden="true"><use href="#i-logo"/></svg>Mashora</a>
+        <p class="footer-about">Online consultations with verified doctors — private video, secure payments and medical reports in one app.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#how-it-works">How it works</a></li>
+          <li><a href="index.html#safety">Trust &amp; safety</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="patients.html">For patients</a></li>
+          <li><a href="doctors.html">For doctors</a></li>
+          <li><a href="#" data-link="dashboard" data-hide-empty>Doctor dashboard</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#" data-link="supportEmail" data-hide-empty>Contact support</a></li>
+          <li><a href="#" data-link="privacy" data-hide-empty>Privacy policy</a></li>
+          <li><a href="#" data-link="terms" data-hide-empty>Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year></span> Mashora. All rights reserved.</p>
+      <p class="disclaimer"><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg>Mashora is not for emergencies. In a medical emergency, call your local emergency number.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
