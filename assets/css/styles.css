@@ -847,6 +847,87 @@ body.menu-open { overflow: hidden; }
   .brand .logo { width: 32px; height: 32px; }
 }
 
+/* ------------------------------------------------------------------ language switch */
+.lang-switch { display: inline-flex; align-items: center; gap: 7px; height: 40px; padding: 0 13px; border-radius: 12px; font: 600 14px/1 var(--font-body); color: var(--text-2); background: var(--surface); border: 1px solid var(--border); transition: color .2s, border-color .2s, background-color .2s; }
+.lang-switch:hover { color: var(--tint-text); border-color: var(--brand-300); }
+.lang-switch .ic { width: 17px; height: 17px; color: var(--brand-500); }
+.lang-switch[lang="ar"], .mobile-menu a[lang="ar"] { font-family: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif; }
+.lang-switch[lang="en"], .mobile-menu a[lang="en"] { font-family: "Inter", ui-sans-serif, system-ui, sans-serif; }
+@media (max-width: 400px) {
+  .lang-switch { padding: 0 10px; }
+  .lang-switch .ic { display: none; }
+}
+/* ملاحظة صغيرة بأعلى أدلة الاستخدام العربية: واجهة التطبيق نفسها بالإنكليزية */
+.lang-note { display: inline-flex; align-items: center; gap: 8px; margin-top: 22px; padding: 8px 16px; border-radius: 999px; font-size: 14px; line-height: 1.5; color: var(--text-2); background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow-sm); }
+.lang-note .ic { width: 17px; height: 17px; color: var(--brand-500); }
+
+/* ------------------------------------------------------------------ Arabic (RTL)
+   الصفحات العربية (ar/*.html) تستخدم نفس التصميم مع خط عربي وعكس الاتجاه.
+   نماذج واجهة التطبيق (الهاتف، لوحة التحكم، النماذج...) تبقى dir="ltr" لأن
+   التطبيق نفسه بالإنكليزية — فتحتفظ بخطها واتجاهها الأصليين */
+:root[lang="ar"] {
+  --font-display: "Cairo", "Plus Jakarta Sans", ui-sans-serif, system-ui, "Segoe UI", Tahoma, sans-serif;
+  --font-body: "IBM Plex Sans Arabic", "Inter", ui-sans-serif, system-ui, "Segoe UI", Tahoma, sans-serif;
+}
+:root[lang="ar"] [dir="ltr"] {
+  --font-display: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-body);
+  text-align: left;
+}
+/* تباعد الأحرف يقطع اتصال الحروف العربية — نلغيه خارج نماذج الواجهة الإنكليزية */
+:root[lang="ar"] body *:not([dir="ltr"], [dir="ltr"] *) { letter-spacing: normal !important; }
+:root[lang="ar"] .is-soon::after { letter-spacing: normal; }
+/* الخط العربي يحتاج ارتفاع سطر أكبر من اللاتيني */
+:root[lang="ar"] body { line-height: 1.8; }
+:root[lang="ar"] h1, :root[lang="ar"] h2, :root[lang="ar"] h3, :root[lang="ar"] h4 { line-height: 1.4; }
+:root[lang="ar"] .hero h1 { font-size: clamp(36px, 5.6vw, 64px); line-height: 1.3; }
+:root[lang="ar"] .page-hero h1 { line-height: 1.3; }
+:root[lang="ar"] .btn, :root[lang="ar"] .nav-links a, :root[lang="ar"] .jump-chips a { line-height: 1.3; }
+:root[lang="ar"] .brand { font-size: 22px; line-height: 1.4; }
+:root[lang="ar"] .eyebrow { line-height: 1.5; }
+:root[lang="ar"] .faq summary { line-height: 1.55; }
+:root[lang="ar"] .eyebrow-plain { font-size: 13.5px; }
+:root[lang="ar"] .footer h4, :root[lang="ar"] .toc h4, :root[lang="ar"] .kv th { font-size: 13.5px; }
+
+/* أيقونات الاتجاه (الأسهم) تنعكس بالعربي */
+[dir="rtl"] .ic-dir { transform: scaleX(-1); }
+
+/* خصائص فيزيائية (left/right) — نعكسها للاتجاه من اليمين لليسار */
+[dir="rtl"] .skip-link { left: auto; right: 16px; }
+[dir="rtl"] .is-soon::after { right: auto; left: -8px; }
+[dir="rtl"] .store-btn { padding: 11px 16px 11px 20px; }
+[dir="rtl"] .eyebrow { padding: 6px 8px 6px 12px; }
+[dir="rtl"] .float-card.f1 { left: auto; right: -10px; }
+[dir="rtl"] .float-card.f2 { right: auto; left: -16px; }
+[dir="rtl"] .float-card.f3 { left: auto; right: -26px; }
+[dir="rtl"] .float-card.f4 { right: auto; left: 10px; }
+[dir="rtl"] .bubble.in { border-bottom-left-radius: 16px; border-bottom-right-radius: 5px; }
+[dir="rtl"] .bubble.out { border-bottom-right-radius: 16px; border-bottom-left-radius: 5px; }
+[dir="rtl"] .notif time { margin-left: 0; margin-right: auto; }
+[dir="rtl"] .section-head.left { text-align: right; }
+[dir="rtl"] .numbered li { padding-left: 0; padding-right: 40px; }
+[dir="rtl"] .numbered li::before { left: auto; right: 0; }
+[dir="rtl"] .kv th, [dir="rtl"] .kv td { text-align: right; }
+[dir="rtl"] .guide-card::before { right: auto; left: -80px; }
+[dir="rtl"] .guide-card::after { right: auto; left: 40px; }
+@media (min-width: 1024px) {
+  [dir="rtl"] .hero-visual { padding-right: 0; padding-left: 40px; }
+}
+@media (min-width: 1100px) {
+  [dir="rtl"] .j-step:not(:last-child)::after { right: auto; left: -17px; background: linear-gradient(270deg, var(--brand-300), transparent); }
+  [dir="rtl"] .toc ol { padding-left: 0; padding-right: 14px; border-left: 0; border-right: 2px solid var(--border-soft); }
+  [dir="rtl"] .toc a::before { left: auto; right: -16px; }
+}
+@media (max-width: 639px) {
+  [dir="rtl"] .float-card.f1 { right: 0; }
+  [dir="rtl"] .float-card.f4 { left: 0; }
+}
+@media (max-width: 640px) {
+  [dir="rtl"] .float-card.f1 { right: -4px; }
+  [dir="rtl"] .float-card.f4 { left: -4px; }
+}
+
 /* ------------------------------------------------------------------ motion */
 .js .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s cubic-bezier(.2, .7, .2, 1), transform .7s cubic-bezier(.2, .7, .2, 1); transition-delay: var(--d, 0s); }
 .js .reveal.in { opacity: 1; transform: none; }

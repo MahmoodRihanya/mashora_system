@@ -1,6 +1,12 @@
 (function () {
   "use strict";
 
+  /* النصوص القليلة التي يكتبها الـJS — حسب لغة الصفحة (<html lang>) */
+  var IS_AR = document.documentElement.lang === "ar";
+  var TEXT = IS_AR
+    ? { openMenu: "فتح القائمة", closeMenu: "إغلاق القائمة", soon: "قريبًا" }
+    : { openMenu: "Open menu", closeMenu: "Close menu", soon: "Soon" };
+
   /* ---------------------------------------------------------------- icons
    * One inline sprite injected at load, referenced as <use href="#i-name"/>.
    * Inline (not an external .svg file) so icons also work when the pages are
@@ -89,7 +95,7 @@
         }
         el.classList.add("is-soon");
         el.setAttribute("aria-disabled", "true");
-        if (!el.hasAttribute("data-soon")) el.setAttribute("data-soon", "Soon");
+        if (!el.hasAttribute("data-soon")) el.setAttribute("data-soon", TEXT.soon);
         el.addEventListener("click", function (event) { event.preventDefault(); });
         return;
       }
@@ -140,7 +146,7 @@
     function setOpen(open) {
       menu.hidden = !open;
       toggle.setAttribute("aria-expanded", String(open));
-      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      toggle.setAttribute("aria-label", open ? TEXT.closeMenu : TEXT.openMenu);
       toggle.querySelector("use").setAttribute("href", open ? "#i-x" : "#i-menu");
       document.body.classList.toggle("menu-open", open);
     }
@@ -192,6 +198,20 @@
     });
   }
 
+  /* ---------------------------------------------------------------- language
+   * زر التبديل يحفظ اختيار الزائر (يُقرأ بسكربت <head> بكل صفحة ليفتحها بلغته
+   * مباشرة بالزيارات القادمة) وينقل نفس القسم (#hash) للصفحة المقابلة. */
+  var LANG_KEY = "mashora-lang";
+
+  function setupLangSwitch() {
+    document.querySelectorAll("[data-lang-switch]").forEach(function (link) {
+      link.addEventListener("click", function () {
+        try { localStorage.setItem(LANG_KEY, link.getAttribute("data-lang-switch")); } catch (e) { /* storage unavailable */ }
+        if (location.hash) link.setAttribute("href", link.getAttribute("href").split("#")[0] + location.hash);
+      });
+    });
+  }
+
   function setupYear() {
     document.querySelectorAll("[data-year]").forEach(function (el) { el.textContent = String(new Date().getFullYear()); });
   }
@@ -202,5 +222,6 @@
   setupNav();
   setupReveal();
   setupScrollSpy();
+  setupLangSwitch();
   setupYear();
 })();

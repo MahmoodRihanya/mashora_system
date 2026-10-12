@@ -9,14 +9,22 @@
 <meta property="og:title" content="Mashora patient guide" />
 <meta property="og:description" content="Everything you need to know — from creating your account to getting your medical report." />
 <meta property="og:type" content="article" />
+<link rel="alternate" hreflang="en" href="patients.html" />
+<link rel="alternate" hreflang="ar" href="ar/patients.html" />
+<link rel="alternate" hreflang="x-default" href="patients.html" />
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='52' fill='%23F0FDFA' stroke='%230F766E' stroke-width='5'/%3E%3Cpath d='M26 60h22l10-26 13 54 10-28h23' fill='none' stroke='%230F766E' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@600&text=%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/styles.css" />
 <script>
   document.documentElement.classList.add("js");
-  try { var t = localStorage.getItem("mashora-theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+  try {
+    var t = localStorage.getItem("mashora-theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    var l = localStorage.getItem("mashora-lang"), alt = l && l !== document.documentElement.lang && document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+    if (alt) location.replace(alt.href + location.hash);
+  } catch (e) {}
 </script>
 </head>
 <body>
@@ -34,6 +42,7 @@
       <a href="index.html#faq">FAQ</a>
     </nav>
     <div class="nav-actions">
+      <a class="lang-switch" href="ar/patients.html" hreflang="ar" lang="ar" data-lang-switch="ar"><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg><span>العربية</span></a>
       <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle dark mode"><svg class="ic ic-moon" aria-hidden="true"><use href="#i-moon"/></svg><svg class="ic ic-sun" aria-hidden="true"><use href="#i-sun"/></svg></button>
       <a class="btn btn-primary btn-sm" href="index.html#download">Get the app</a>
       <button class="icon-btn nav-burger" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg></button>
@@ -46,6 +55,7 @@
   <a href="patients.html">For patients <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
   <a href="doctors.html">For doctors <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
   <a href="index.html#faq">FAQ <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  <a href="ar/patients.html" hreflang="ar" lang="ar" data-lang-switch="ar">العربية <svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg></a>
   <a class="btn btn-primary btn-lg" href="index.html#download">Get the app</a>
 </div>
 
